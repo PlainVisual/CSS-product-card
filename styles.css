@@ -1,0 +1,136 @@
+/* -- Fonts -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+/* -- CSS RESET -- */
+
+*, *::before, *::after {
+        box-sizing: border-box;
+      }
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0; 
+ 
+}
+
+
+body {
+    line-height: 1.5;
+    font-family: var(--ff-fontfamily);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+/* -- Global styles -- */
+
+:root {
+--ff-fontfamily: 'Poppins', sans-serif;
+--ff-fontweight-light: 300;
+--ff-fontweight-bold: 500;
+--primary-clr-dark:hsl(0, 0%, 45%);
+--primary-clr-light:hsl(0, 0%, 91%);
+--accent-clr:hsl(19, 73%, 51%);
+/* -- colorpicker -- */
+--picker-clr--pink:hsl(334, 90%, 80%);
+--picker-clr--black:hsl(240, 3%, 16%);
+--picker-clr--beige:hsl(35, 13%, 51%);
+--picker-clr--tint:hsl(60, 10%, 73%);
+
+}
+
+/* -- Design product -- */
+
+.product {
+    /* "auto" aan de zijkanten zorgt ervoor dat het element in het midden komt te staan*/
+    margin: 80px auto;
+    /* Dit element heeft een vaste breedte van 350 pixels */
+    width: 350px;
+    position: relative;
+    
+}
+
+.product__img {
+    position: relative;
+}
+
+.product__fav {
+    position: absolute;
+    width: 20px;
+    height:20px;
+    right:12px;
+    bottom: 12px;
+}
+
+.product__label {
+    position: absolute;
+    background-color: var(--primary-clr-light);
+    padding: 0em 1.5em 0em 1.5em;
+    height: 40px;
+    text-align: center;
+    top: 80px;
+    left:0px;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+}
+
+.product__label p {
+    position: relative;
+    font-size: 0.95rem;
+    text-transform: uppercase; 
+    color: var(--accent-clr);
+    font-weight: var(--ff-fontweight-bold);
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.wrapper__picker {
+    padding: 0.4em 0em 0.2em 0em;
+}
+
+.color__swatch {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    margin-right: 3px;
+}
+
+.color__swatch.pink {
+    background-color: var(--picker-clr--pink);
+}
+
+.color__swatch.black {
+    background-color: var(--picker-clr--black);
+}
+
+.color__swatch.beige {
+    background-color: var(--picker-clr--beige);
+}
+
+.color__swatch.light {
+    background-color: var(--picker-clr--tint);
+}
+
+.product__description {
+    padding: 0.5em 0em 0em 0em;
+}
+
+.product__description h6 {
+    color: var(--picker-clr--beige);
+}
+
+/* - Vul dit document aan met jouw eigen css! - */
